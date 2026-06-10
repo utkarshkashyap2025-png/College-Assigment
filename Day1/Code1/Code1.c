@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int N;
-    long long sum;
-
-    printf("Enter N: ");
-    scanf("%d", &N);
-
-    sum = (long long)N * (N + 1) / 2;
-
-    printf("Sum of first %d natural numbers = %lld\n", N, sum);
-
+   int n , i , sum = 0;
+    printf("Enter the number: ");
+    scanf("%d", &n);
+    for(i = 1; i <= n; i++) {
+        sum += i;
+    }
+    printf("Sum of first %d natural numbers = %d\n", n, sum);
     return 0;
 }
